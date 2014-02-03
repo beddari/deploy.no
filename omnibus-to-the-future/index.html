@@ -140,9 +140,9 @@ Meanwhile, back on planet earth
 * It is not straigthforward to host your own software library
 !SLIDE
 ## fpm-cookery
-* A rubygem providing generic packaging DSL on top of fpm
+* A gem that adds a generic packaging DSL on top of fpm
 * Uses Puppet and Facter for abstractions
-* Andy Sykes @supersheep contributed code to get omnibus-features
+* Andy Sykes @supersheep contributed code to get omnibus-like features
 * DSL contains definition of both build- and deploytime package dependencies
 !SLIDE
 ## fpm-cookery gotchas!
@@ -164,12 +164,20 @@ I use both!
 * Foreman or Foreman proxy alongside other stuff on SmartOS? FreeBSD?
 !SLIDE
 ## I'm doing it, please stop me! (or try to help)
-* Come chat with me after this or ping me on Twitter
-* Lets try and have something quickly
+* Come chat with me after this in the hack room or ping me on Twitter
+* Lets try and have something usable quickly
   * Vagrant bulid lab?
   * Binaries/repos at bintray?
 !SLIDE
 ## Thank you for listening!
+!SLIDE
+# BONUS SLIDES UNLOCKED!
+!SLIDE
+## The Vagrant-based Foreman bootstrap process
+* Provision Foreman all-in-one with Vagrant on VirtualBox
+* Create an extra network on the instance
+* Bridge that network to a 'real' physical network
+* Use e.g PXE with Foreman in Vagrant to provision ... Foreman
 !SLIDE
 _References_
 

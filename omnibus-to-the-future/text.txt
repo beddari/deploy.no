@@ -1,3 +1,5 @@
+1.
+
 Hi everyone, if I say 'Just enough OS' I guess most have a pretty good picture of what that means conceptually.
 
 Show of hands?
@@ -12,4 +14,8 @@ So what are the wins we got from that? Speed, less complexity, clarity, possibly
 
 I think I could say that today 'Just enough OS' is an established 'best practice' in most environments.
 
+2.
 
+Just enough packaging?
+
+This isn't really a concept yet - but I think of it as something similar to Just enough OS, it has some of the same properties. So what I'm getting at is that maybe we - and then I'm thinking about we as a whole, the open source community - might not be packaging applications in the most flexible and efficient way. I think my main point is that packaging should be done first and foremost for THE USERS.  
