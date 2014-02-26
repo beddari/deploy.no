@@ -50,6 +50,199 @@ _Software 2014_
 !SLIDE
 ## [@beddari](https://twitter.com/beddari)
 på Twitter eller Freenode
+!SLIDE
+# 1. Prosjekt
+!SLIDE
+# UH-sky
+UH = Universitet og Høyskole (implisitt -sektoren)
+!SLIDE
+## _UH-sky er et samarbeidsprosjekt for sektoren i regi av Uninett_
+
+[https://www.uninett.no/skytjenester](https://www.uninett.no/skytjenester)
+!SLIDE
+## _Fra mandatet_
+"Universitetene og UNINETT ønsker å ta skytjenester i bruk på en omforent måte og vil dermed forsterke de gode sidene og redusere eller fjerne de negative sidene ved skytjenestene."
+!SLIDE
+## _Fra Gartner_
+"Leveraging the __collaborative culture__ of the higher education community and developing __trusted cloud brokers__. This is a major opportunity for speeding up the implementation of cloud services and gain the benefits of economies of scale, as well as integration of information flows. The most natural vehicle for that in most countries are the __NRENs__"
+
+NREN = National Research and Education Network
+!SLIDE
+## _Oppgaver i UH-sky_
+* Levere en plattform for infrastrukturtjenester (IaaS)
+ * Innkjøp av IaaS-tjeneste (høsten 2014)
+ * Levere egen, intern IaaS
+* Porteføljeutvikling og forvaltning av skytjenester for sektoren
+!SLIDE
+# 2. Kode
+!SLIDE
+# Openstack
+
+Ny teknologi, nytt paradigme?
+!SLIDE
+## _Faglig sterke Linux-miljø ved UIB og USIT_
+!SLIDE
+## _Ønske om å lære, modernisere, effekivisere_
+!SLIDE
+## _Oktober 2013: Arbeid med Openstack begynner_
+
+Ikke mye organisert eller formalisert men skjer direkte i _fagmiljøene_
+!SLIDE
+## _Kan dette minne om et åpen kildekode-prosjekt?_
+* Det meste blir gjort "på fritiden" 
+* Sterk egeninteresse, sterkt ønske om å lære
+* Minimalt med organisering
+!SLIDE
+## _Snart 5 måneder senere kan vi basisen_
+
+Hint: Dette ser ut til å virke for oss
+!SLIDE
+## _Jobber mot et MVP_
+* Infrastruktur definert av kode - testbar kode!
+* Design scope: "Du har en fiber med nett inn"
+* Openstack med eller uten støtte fra leverandør
+* På egen maskin, lokal IT eller i større samarbeid
+* Finnes som åpen kildekode-prosjekt på Github
+!SLIDE
+## _Tekniske detaljer om plattformen_
+* Red Hat RDO Openstack (utviklingsmiljø)
+* Puppet
+* Ser på sky-tilpasset datasenter-nettverk
+* Integrasjon mot FEIDE for autentisering
+!SLIDE
+# 3. Prosjekt møter kode
+!SLIDE
+# Prosjektet UH-sky møter koden fra fagmiljøene
+!SLIDE
+# _Hva nå??_
+!SLIDE
+![fail](uh_fail.gif)
+!SLIDE
+![suksess](uh_suksess.gif)
+!SLIDE
+## Hva kan jeg som faglig leder av dette gjøre for å bygge broer?
+!SLIDE
+## _DevOps?_
+
+Patrick Debois, Gene Kim, Adam Jacobs, John Vincent, Jez Humble
+!SLIDE
+# _CAMS!_
+* Culture
+* Automation
+* Measurement
+* Sharing
+
+Fra [What Devops Means to Me](http://www.getchef.com/blog/2010/07/16/what-devops-means-to-me/) av John Willis
+!SLIDE
+## _OK, hva kan du få til med dette?_
+!SLIDE
+# _CAMS: Kultur_
+!SLIDE
+## _IT-kulturen i UH-sektoren_
+* Mitt og ditt (utstyr, problem, osv)
+* "Det gamle fungerer godt/bedre/lenge enda"
+* "Brukere er dumme" (f.eks sikkerhet)
+* Samarbeidskultur som er sterk
+* Åpen kildekode
+* Faglig stolthet - ønske om å være god
+* Personlig frihet
+!SLIDE
+## _Ta vare på det gode_
+* Samarbeidskultur som er sterk
+* Åpen kildekode
+* Faglig stolthet - ønske om å være god
+* Personlig frihet
+!SLIDE
+## _Bygge noe nytt?_
+* Felles forståelse
+* Felles ansvarsfølelse
+* Felles framdrift
+* Sosialisering - faglige arenaer i sosial kontekst
+!SLIDE
+# _CAMS: Automatisere_
+!SLIDE
+## _Infrastruktur som kode_
+* Kveg, ikke kjæledyr
+* "Noe galt med en node? Skyt den i hodet"
+* Koden skal beskrive infrastrukturen så godt at tjenesten er det eneste som har en tilstand
+* Ikke lenger "drifte servere" men "sette opp instanser" 
+!SLIDE
+## _The myth of the one-off_
+* Dette MÅ MAN IKKE GLEMME hvis ROI er er et mål
+* Teknisk gjeld med VELDIG HØY rente
+!SLIDE
+## _UH-sektoren er klar_
+* De aller fleste har automatiserings-initiativ på egen hånd
+* Verktøy er underordnet hvis man godtar prinsipp og kostnad - economics of scale
+!SLIDE
+# _CAMS: Måling_
+!SLIDE
+## "Man kan ikke bli bedre hvis man ikke vet hvor man var"
+(fritt oversatt)
+!SLIDE
+## _Måle så mye som mulig så ofte som mulig_
+* Visualisere målingene topp-til-bunn
+* produsent-infrastruktur-tjeneste-konsument
+* Etsys "vertical line technology"
+!SLIDE
+## Ærlig: Lite informasjon om hvor vi er, per i dag
+* (Jeg vil anta) det er et stort gap brukere - tjenester
+* Bygge tillit ved å involvere konsumentene, tilgjengeliggjøre data
+!SLIDE
+## _Vi kan lære av å se .. hva AWS gjør_
+!SLIDE
+# _CAMS: Deling_
+!SLIDE
+## _UH-sektoren burde være gode på dette?_
+!SLIDE
+## Sannheten er at vi stort sett er elendinge!
+
+Men vi ønsker sterkt å bli bedre
+!SLIDE
+## _Forestilte problemer med deling_
+* Ingen andre har bruk for dette ...!
+* Jeg kan ikke kode/skrive/bidra godt nok
+* Tiden strekker ikke til!
+* Sikkerhet
+!SLIDE
+## _Selv internt er vanskelig_
+* Veldig mye duplisering
+* Mange sitter med nøyaktig samme problemer 
+!SLIDE
+## _Jeg ønsker å prøve en for oss ny måte nå når UH-sky som prosjekt møter IaaS-koden vi som fagfolk produserer_
+!SLIDE
+## (pending approval!)
+!SLIDE
+* "Åpent" er for snevert, også utadvendt, oppsøkende
+* Dele alt! Planlegging, dokumentasjon, kommunikasjon, kode ++
+* Søke utover for å finne løsninger, ikke inn og ned
+* Sosialisering og bygging av fellesskap
+* "Har noen et problem er det en bug" som standard (Logstash #hugops)
+!SLIDE
+## and now, without further ado, for Software 2014 ..
+!SLIDE
+# NorCAMS er lansert!
+!SLIDE
+## Hva er NorCAMS?
+* En ide om en delingsplattform for IaaS og Openstack
+* norcams/winch på Github
+* Ønsker å bygge opp rundt prinsippene i CAMS
+* Er det mulig å få til en sosialt forankret, faglig plattform?
+* Hvem? Så langt bare meg, bli med!
+* Følg [@norcams](https://twitter.com/norcams) på Twitter for oppdateringer!
+!SLIDE
+## norcams/winch
+* "winch is not cloud" eller "winch installs cloud hosts"
+* Dette er Openstack-koden vår i øyeblikket, brukt til opplæring og proof-of-concept sky-bygging
+* Koden er under utvikling mot det MVP jeg tidligere beskrev
+!SLIDE
+# Spørsmål?
+!SLIDE
+## Takk for meg!
+
+* Kontaktperson for UH-sky er [Kristin Selvaag](https://www.uninett.no/skytjenester), Uninett
+* Kontaktperson for [norcams/winch](https://github.com/norcams/winch) Openstack-plattform er meg, Jan Ivar Beddari
+
 </script></section>
 
 </div>
