@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="author" content="Jan Ivar Beddari">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<style type="text/css">
+			html {
+				background: #111111;
+				background-color: #111111; }
+		</style>
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/night.css" id="theme">
+		<link rel="stylesheet" href="../css/main.css">
+
+		<!-- Fullscreen images -->
+		<link rel="stylesheet" href="fullscreen-img.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../css/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section data-markdown data-separator="\n!SLIDE\n" data-vertical="\n!SLIDEDOWN\n"><script type="text/template">
+# Faggruppe IaaS
+_Vi kan bygge skyen selv!_
+!SLIDE
+## [@beddari](https://twitter.com/beddari)
+på Twitter eller Freenode
+!SLIDE
+## _Ide:_
+
+## _Skape et felles fagmiljø som kan bidra til å utvikle og levere en intern IaaS-løsning for sektoren_
+!SLIDE
+## _Bakgrunn:_
+* Faglig interesse fra Linux-driftsmiljø ved UIB og USIT
+* Openstack: Ny teknologi, nytt paradigme?
+  * Fagmiljø på HiOA, HiG og UiS
+  * Lokal IT - USIT, UIB og UIT
+* Behov for å lære, modernisere, effekivisere
+* UH-sky og de lokale prosjektene finner hverandre
+!SLIDE
+## _Hva skal faggruppa gjøre?_
+Faggruppe IaaS er et åpent faglig forum for diskusjon av "infrastruktur som en tjeneste" (IaaS). Faggruppa har som mål å være en ressurs for sektoren i spørsmål om moderne infrastruktur og teknisk leveranse av skytjenester.
+
+En viktig aktivitet i gruppa vil være å samle og bygge videre på den fagkunnskap som er nødvendig for å nå UH-sky-prosjektet sitt mål om å bygge en UH-intern IaaS.
+!SLIDE
+## _Hvordan kan faggruppa bidra til å bygge en IaaS?_
+!SLIDE
+## Å bygge IaaS er et _utviklingsprosjekt_
+!SLIDE
+## 1. Kort perspektiv (2014)
+!SLIDE
+## FoU fase
+* Organisering som et åpen kildekode-prosjekt
+* Tekniske mål mot et MVP, 'minimum viable product'
+* Sterk egeninteresse, sterkt ønske om å lære
+* Minimalt med organisering
+!SLIDE
+## _På kort sikt vil vi levere ..._
+* et fullautomatisert, dokumentert proof-of-concept
+* starte med Openstack med eller uten støtte fra leverandør
+* støtte installasjon for
+ * egen maskin
+ * lokal IT-organisasjon
+ * større skala samarbeid (proof of concept)
+* jobbe i et åpen kildekode-prosjekt på Github
+!SLIDE
+## _... men dette gir oss ikke en ferdig løsning!_
+!SLIDE
+## 2. Lengere perspektiv
+!SLIDE
+## Pilot -> inkubasjon -> produksjon
+!SLIDE
+## _På lengere sikt kan vi ..._
+* skape et virtuelt, teknisk kompetansemiljø
+  * Lokalt forankrede fagpersoner
+  * Koordinert med hjelp fra Uninett
+  * Kompetanse tilgjengelig for alle
+* Felles fysisk maskinvare, plassering og lokasjoner
+  * Felles innkjøp, felles eiendom, felles ansvar
+  * Enhetlig produksjonsutstyr forenkler levering
+!SLIDE
+## 3. Tankeeksperiment:
+Hva trenger vi for å levere 700 OS-instanser og 100TB lagring i løpet av 2015?
+!SLIDE
+* 3-4 personer fra fagmiljøene vi allerede har
+* 2-3 lokasjoner
+* 30 fysiske noder til compute (30:1 instans-ratio)
+* 20 fysiske noder til storage (6-9 disker i hver node)
+!SLIDE
+# La våre egne IT-fagmiljø bygge skyen!
+!SLIDE
+## Takk for meg!
+
+</script></section>
+
+</div>
+
+		</div>
+
+		<script src="../lib/head.min.js"></script>
+		<script src="../lib/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'fullscreen-img.js' }
+				]
+			});
+
+		</script>
+
+        <script src="http://localhost:35729/livereload.js"></script>
+
+	</body>
+</html>
