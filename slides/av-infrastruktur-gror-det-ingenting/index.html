@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="author" content="Jan Ivar Beddari">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<style type="text/css">
+			html {
+				background: #111111;
+				background-color: #111111; }
+		</style>
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/night.css" id="theme">
+		<link rel="stylesheet" href="../css/main.css">
+
+		<!-- Fullscreen images -->
+		<link rel="stylesheet" href="fullscreen-img.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../css/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section data-markdown data-separator="\n!SLIDE\n" data-vertical="\n!SLIDEDOWN\n"><script type="text/template">
+# Av infrastruktur gror det ingenting?
+_USIT, 27. november 2014_
+!SLIDE
+&nbsp;
+### [@beddari](https://twitter.com/beddari)
+på Twitter eller Freenode IRC
+<section fullscreen-img="sykkel.jpg" fullscreen-size="contain">
+</section>
+!SLIDE
+# 1. Prosjektet
+!SLIDE
+## _UH-sky sitt mandat_
+"Universitetene og UNINETT ønsker å ta skytjenester i bruk på en omforent måte og vil dermed forsterke de gode sidene og redusere eller fjerne de negative sidene ved skytjenestene."
+!SLIDE
+## _Fra Gartner_
+"Leveraging the __collaborative culture__ of the higher education community and developing __trusted cloud brokers__. This is a major opportunity for speeding up the implementation of cloud services and gain the benefits of economies of scale, as well as integration of information flows. The most natural vehicle for that in most countries are the __NRENs__"
+
+NREN = National Research and Education Network
+!SLIDE
+## _UH IaaS_
+
+"The main project activity is developing, documenting and delivering an open source IaaS platform ready for production use by June 15th 2015."
+
+[iaas.readthedocs.org](http://iaas.readthedocs.org/en/latest/project/plan.html)
+!SLIDE
+# 2. Kode
+!SLIDE
+# Openstack
+
+Ny teknologi, nytt paradigme?
+!SLIDE
+## _Faglig sterke Linux-miljø i sektoren_
+!SLIDE
+## _Ønske om å lære, modernisere, effekivisere_
+!SLIDE
+## _Oktober 2013: Arbeid med Openstack begynner_
+
+Ikke mye organisert eller formalisert men skjer direkte i _fagmiljøene_
+!SLIDE
+## _Kan dette minne om et åpen kildekode-prosjekt?_
+* Det meste ble gjort "på fritiden" 
+* Sterk egeninteresse, sterkt ønske om å lære
+* Minimalt med organisering
+!SLIDE
+## _Vi lærte oss den viktige basisen_
+
+Hint: Modellen ser ut til å ha virket for oss
+!SLIDE
+## _Juni 2014: UH IaaS vedtas som prosjekt_
+!SLIDE
+## _Snart leverer vi MVP_
+* Minimum viable product = minimumsprodukt
+* En leveranse som vi kan iterere på, forbedre, utvide
+* Kode og automatisering er sentralt
+!SLIDE
+# 3. Koden møter fagmiljøene
+!SLIDE
+# _Hva nå??_
+!SLIDE
+![fail](uh_fail.gif)
+!SLIDE
+![suksess](uh_suksess.gif)
+!SLIDE
+## Hva kan du som faglig ansvarlig i dette gjøre for å bygge broer?
+!SLIDE
+## _DevOps?_
+
+Patrick Debois, Gene Kim, Adam Jacobs, John Vincent, Jez Humble
+!SLIDE
+# _CAMS!_
+* Culture
+* Automation
+* Measurement
+* Sharing
+
+Fra [What Devops Means to Me](http://www.getchef.com/blog/2010/07/16/what-devops-means-to-me/) av John Willis
+!SLIDE
+## _OK, hva kan du få til med dette?_
+!SLIDE
+# _CAMS: Kultur_
+!SLIDE
+## _IT-kulturen i UH-sektoren_
+* Mitt og ditt (utstyr, problem, osv)
+* "Det gamle fungerer godt/bedre/lenge enda"
+* "Brukere er dumme" (f.eks sikkerhet)
+* Samarbeidskultur som er sterk
+* Åpen kildekode
+* Faglig stolthet - ønske om å være god
+* Personlig frihet
+!SLIDE
+## _Ta vare på det gode_
+* Samarbeidskultur som er sterk
+* Åpen kildekode
+* Faglig stolthet - ønske om å være god
+* Personlig frihet
+!SLIDE
+## _Bygge videre?_
+* Felles forståelse
+* Felles ansvarsfølelse
+* Felles framdrift
+* Sosialisering - faglige arenaer i sosial kontekst
+!SLIDE
+## #hugops
+!SLIDE
+## #monitoringlove
+!SLIDE
+# _CAMS: Automatisere_
+!SLIDE
+## _Infrastruktur som kode_
+* Kveg, ikke kjæledyr
+* "Noe galt med en node? Skyt den i hodet"
+* Idealet er at tjenesten er eneste komponent med en tilstand
+* Ikke lenger "drifte servere" men "sette opp instanser" 
+!SLIDE
+## _The myth of the one-off_
+* Teknisk gjeld med VELDIG HØY rente
+* Standardisering av prosess, kode og verktøy hjelper oss
+!SLIDE
+# _CAMS: Måling_
+!SLIDE
+## "Man kan ikke bli bedre hvis man ikke vet hvor man er"
+(fritt oversatt, ukjent kilde på Twitter)
+!SLIDE
+## _Måle så mye som mulig så ofte som mulig_
+* Visualisere målingene topp-til-bunn
+* produsent-infrastruktur-tjeneste-konsument
+* Alle må se DET SAMME bildet, samtidig
+* Etsy: "Vertical line technology"
+!SLIDE
+## Hvordan går vi fram?
+* (Jeg vil anta) det er et stort gap brukere -> tjenester
+* Bygge tillit ved å involvere konsumentene, tilgjengeliggjøre data
+!SLIDE
+## _Mange er bedre enn oss, så vi kan lære .. f.eks av hva AWS gjør_
+!SLIDE
+# _CAMS: Deling_
+!SLIDE
+## _UH-sektoren burde være gode på dette?_
+!SLIDE
+## Sannheten er at vi stort sett er elendinge!
+
+Men vi ønsker sterkt å bli bedre
+!SLIDE
+## _Forestilte problemer med deling_
+* Ingen andre har bruk for dette ...!
+* Jeg kan ikke kode/skrive/bidra godt nok
+* Tiden strekker ikke til!
+* Sikkerhet
+!SLIDE
+## _Konsekvensen er klar_
+* Veldig mye duplisering
+* Mange sitter med nøyaktig samme problemer
+* Lite kommunikasjon på detaljnivå - der verdien er størst!
+!SLIDE
+# 4. Hva gjør vi i UH IaaS?
+!SLIDE
+## _Mindre styring, mer samarbeid!_
+* Først rammer, så oppgaver - ikke omvendt
+* Gitt rammer er folk selvorganiserende
+!SLIDE
+## Deling av alt!
+* Utadvendt, oppsøkende deling! Kom å se :-)
+* Deling av
+  * Kommunikasjon
+  * Planer, ideer, dokumentasjon,  ++
+* Kontinuerlig søk etter forbedringspotensiale
+* Sosialisering og bygging av fellesskap
+* "Har noen et problem er det en bug" (lånt fra Logstash)
+!SLIDE
+## NorCAMS!
+![hand](hand.png)
+!SLIDE
+## Hva er NorCAMS?
+* En ide om en utvidet delingsplattform for IaaS og Openstack
+* norcams-organisasjon på Github
+* Ønsker å bygge opp rundt prinsippene i CAMS
+* Et eksperiment - er det mulig å få til en sosialt forankret, faglig plattform?
+* Hvem? Så langt bare oss i prosjektet og noen få til, bli med!
+!SLIDE
+## [norcams/winch](https://github.com/norcams/winch)
+* "winch is not cloud" eller "winch installs cloud hosts"
+* Dette er Openstack-koden vår i øyeblikket, brukt til opplæring og proof-of-concept sky-bygging
+* Koden vil brukes for MVP
+!SLIDE
+## [norcams/himlar](https://github.com/norcams/himlar)
+* Udefinert flertall (nyn.) av himmel
+* Ny kodebase som skal bli produksjonsplattformen
+* Automatisering og testing av servere, lagring og nettverk
+!SLIDE
+# Spørsmål?
+
+</script></section>
+
+</div>
+
+		</div>
+
+		<script src="../lib/head.min.js"></script>
+		<script src="../lib/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'fullscreen-img.js' }
+				]
+			});
+
+		</script>
+
+        <script src="http://localhost:35729/livereload.js"></script>
+
+	</body>
+</html>
