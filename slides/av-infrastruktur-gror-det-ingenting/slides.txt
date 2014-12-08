@@ -1,0 +1,62 @@
+Av infrastruktur gror det ingenting?
+Software 2014
+
+UH-sektoren bygger sky,
+Hvorfor gjør vi det, og hvordan?
+
+Jan Ivar Beddari
+
+DevOps?
+Neh, CAMS! 
+
+Culture
+Automation
+Measurement
+Sharing
+
+John Willis
+
+1. Kultur
+
+Karaktertrekk ved IT-kulturen i UH
+
+De dårlige først
+- Mitt og ditt (utstyr, problem, osv)
+- De gamle løsningene fungerer godt
+- Brukere er dumme
+
+Til å ta vare på
+- Samarbeidskultur som er sterk
+- Åpen kildekode står meget sterkt
+- Faglig kompetanse holder et høyt nivå
+- Stor grad av frihet og mulighet til eksperimentering med teknologi
+
+Hvordan kan vi bygge en ny, felles kultur(forståelse)?
+- Skape faglige arenaer med sosial kontekst
+- Gi det samme ansvaret for framdrift til alle
+- Bygge ned og fjerne teknologisk definerte skiller
+
+2. Automatisering
+
+
+
+3. Måling
+
+
+4. Deling
+
+Erkjennelse: Historisk har vi en lang vei å gå når det gjelder praktisk deling
+
+Ønsker å prøve en for oss ny måte med UH-sky (og IaaS)
+- Åpenhet er kanskje for snevert, vi må også være utadvent
+- Modellen kan hentes fra åpen kildekode-prosjekter:
+-- Dele alt
+-- Søke utover for å finne løsninger, ikke grave seg ned eller låse seg inn
+-- Sosialisering og bygging av fellesskap
+-- "Har noen et problem er det en bug" som standard (Logstash #hugops)
+
+
+NorCAMS - åpen kildekode-paraply
+winch   - "winch is not cloud"
+
+
