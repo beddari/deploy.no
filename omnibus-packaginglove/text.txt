@@ -1,0 +1,21 @@
+1.
+
+Hi everyone, if I say 'Just enough OS' I guess most have a pretty good picture of what that means conceptually.
+
+Show of hands?
+
+It is a really old concept, actually I found out it even has a wikipedia page. On there I found a link to a page at VMware from 2007 that explains it is pronounced 'juice'. That was news to me :)
+
+Just to recap some of that ... what we do is that we cut down the base OS deployment as much as possible. Then, at provisioning time, Puppet or Chef or whatever comes in and pulls all the stuff we need to get up and running.
+
+The key benefit is that the OS in its final state does not contain anything more than the explicit dependencies of the services we are going to provide.
+
+So what are the wins we got from that? Speed, less complexity, clarity, possibly less cost, some would also say security - just because you deploy less bits that you don't use. I won't argue that.
+
+I think I could say that today 'Just enough OS' is an established 'best practice' in most environments.
+
+2.
+
+Just enough packaging?
+
+This isn't really a concept yet - but I think of it as something similar to Just enough OS, it has some of the same properties. So what I'm getting at is that maybe we - and then I'm thinking about we as a whole, the open source community - might not be packaging applications in the most flexible and efficient way. I think my main point is that packaging should be done first and foremost for THE USERS.  
