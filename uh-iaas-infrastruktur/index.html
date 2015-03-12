@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="author" content="Jan Ivar Beddari">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<style type="text/css">
+			html {
+				background: #111111;
+				background-color: #111111; }
+		</style>
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../css/night.css" id="theme">
+		<link rel="stylesheet" href="../css/main.css">
+
+		<!-- Fullscreen images -->
+		<link rel="stylesheet" href="fullscreen-img.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../css/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../lib/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section data-markdown data-separator="\n!SLIDE\n" data-vertical="\n!SLIDEDOWN\n"><script type="text/template">
+# Av infrastruktur gror det ingenting?
+_@campus nettsamling_
+!SLIDE
+## [@beddari](https://twitter.com/beddari)
+på Twitter eller Freenode IRC
+!SLIDE
+# 1. Infrastruktur som kode
+!SLIDE
+# Openstack
+Ny teknologi, nytt paradigme
+!SLIDE
+# yum -y install openstack?
+!SLIDE
+# ./configure && make
+!SLIDE
+## _Openstack kan ikke fungere i en tradisjonell tilnærming til drift og vedlikehold_
+!SLIDE
+## _Faglig sterke Linux-miljø ved UIB og USIT_
+!SLIDE
+## _Ønske om å modernisere, effekivisere_
+!SLIDE
+# Automate all the things!
+!SLIDE
+## _Drift?_
+Nei, kontinuerlig utvikling
+!SLIDE
+## _git, automatisert testing, dev->test->prod_
+!SLIDE
+## _Hva er ambisjonen?_
+!SLIDE
+1. Finn en lokasjon med strøm, plass og fiber
+2. Kable opp utstyret, boot med en USB-pinne
+3. Drikk mer kaffe
+!SLIDE
+* Nettverk
+* Servere for compute og lagring
+* Alle tjenestene i Openstack
+!SLIDE
+# _SKEPTISK?_
+!SLIDE
+## _Ja, vi også. Men vi har ikke noe valg._
+!SLIDE
+(det virker!)
+!SLIDE
+# 2. Nettverk som kode?
+!SLIDE
+## _Datasenter-nett, krav og løsninger utvikler seg veldig raskt!_
+!SLIDE
+## Trender
+* Åpen foretrekkes foran lukket (OCP, open compute project)
+* Komplekse problemer løses høyere opp i OSI-modellen
+* Lag 2 blir en point-to-point protokoll
+* Lag 3 for skalering og redundans, switcher blir rutere, internett = datasenteret
+* API API API API API og API
+</script>
+</section>
+<section fullscreen-img="l3only_network.png" fullscreen-size="contain">
+</section>
+<section fullscreen-img="overlay.png" fullscreen-size="contain">
+</section>
+<section fullscreen-img="logical_concept.png" fullscreen-size="contain">
+</section>
+<section data-markdown data-separator="\n!SLIDE\n" data-vertical="\n!SLIDEDOWN\n"><script type="text/template">
+## Linux som switch-OS
+* Programvare kan interagere direkte med ruting-konfigurasjonen
+* Avansert funksjonalitet kan gjøres tilgjengelig til applikasjonslaget på en billig, enkel måte
+* F.eks IDS, DDoS mitigation, sentralisert statistikk
+* Gjenbruk av verktøy og prosesser fra automatisert applikasjonsdrift på nettverksprogramvare og konfigurasjon
+!SLIDE
+# 3. Kultur
+!SLIDE
+## _Prosjektet UH IaaS møter fagmiljøene i sektoren_
+!SLIDE
+# _Hva nå??_
+!SLIDE
+![fail](uh_fail.gif)
+!SLIDE
+![suksess](uh_suksess.gif)
+!SLIDE
+## Hva kan jeg som faglig ansvarlig i dette gjøre for å bygge broer?
+!SLIDE
+## _DevOps? CAMS!_
+* Culture
+* Automation
+* Measurement
+* Sharing
+
+Fra [What Devops Means to Me](http://www.getchef.com/blog/2010/07/16/what-devops-means-to-me/) av John Willis
+!SLIDE
+## _IT-kulturen i UH-sektoren_
+* Mitt og ditt (utstyr, problem, osv)
+* "Det gamle fungerer godt/bedre/lenge enda"
+* "Brukere er dumme" (f.eks sikkerhet)
+* Samarbeidskultur som er sterk
+* Åpen kildekode
+* Faglig stolthet - ønske om å være god
+* Personlig frihet
+!SLIDE
+## _Ta vare på det gode_
+* Samarbeidskultur som er sterk
+* Åpen kildekode
+* Faglig stolthet - ønske om å være god
+* Personlig frihet
+!SLIDE
+## _Bygge noe nytt?_
+* Felles forståelse
+* Felles ansvarsfølelse
+* Felles framdrift
+* Sosialisering - faglige arenaer i sosial kontekst
+!SLIDE
+# Spørsmål?
+!SLIDE
+
+</script></section>
+
+</div>
+
+		</div>
+
+		<script src="../lib/head.min.js"></script>
+		<script src="../lib/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../lib/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../lib/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../lib/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'fullscreen-img.js' }
+				]
+			});
+
+		</script>
+
+        <script src="http://localhost:35729/livereload.js"></script>
+
+	</body>
+</html>
